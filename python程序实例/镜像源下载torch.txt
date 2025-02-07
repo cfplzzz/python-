@@ -1,0 +1,11 @@
+在使用 pip 下载 PyTorch 时，如果你想通过国内的镜像地址来加速下载过程，可以按照以下步骤操作：
+
+一、选择国内镜像源
+国内有多个可用的 pip 镜像源，如清华大学、阿里云、中国科学技术大学等。这些镜像源通常会缓存常用的 Python 包，因此可以显著提高下载速度。
+
+二、使用镜像源安装 PyTorch
+临时使用镜像源：
+如果你只是想临时使用国内镜像源来安装 PyTorch，可以在 pip install 命令后加上 -i 参数来指定镜像源 URL。例如，使用清华大学镜像源安装 PyTorch 可以使用以下命令：
+
+pip install torch torchvision torchaudio -i https://pypi.tuna.tsinghua.edu.cn/simple
+这条命令会从清华大学镜像源中下载 PyTorch 及其相关库，并将其安装到你的系统中。
